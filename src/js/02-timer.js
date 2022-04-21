@@ -72,7 +72,7 @@ function timer() {
     const intreval = setInterval(() => {
         if(selectedDate - Date.now() < 300 && selectedDate - Date.now() > -300) {
             clearInterval(intreval)
-            Notiflix.Notify.success("Timer")
+            Notiflix.Notify.success("Time's up!")
     }
         const difference = selectedDate - Date.now();
     const convertedMs = convertMs(difference);
